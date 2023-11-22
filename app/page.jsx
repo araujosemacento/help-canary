@@ -17,10 +17,6 @@ import IsMobile from "@/components/isMobile";
 export default function Home() {
   const [page, setPage] = React.useState("home");
 
-  const [size, setSize] = React.useState(window.innerWidth);
-
-  console.log(IsMobile(size));
-
   const handleSelect = (index) => {
     setPage(index);
   };
